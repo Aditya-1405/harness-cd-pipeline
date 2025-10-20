@@ -1,0 +1,12 @@
+{
+  "name": "harnesscd-demo-app",
+  "version": "1.0.0",
+  "description": "Demo Node.js app for Jenkins CI and Harness CD on Minikube",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}

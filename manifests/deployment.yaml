@@ -1,0 +1,27 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: harnesscd-demo
+  namespace: aditya-test-environment
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: harnesscd-demo
+  template:
+    metadata:
+      labels:
+        app: harnesscd-demo
+    spec:
+      containers:
+      - name: harnesscd-demo
+        image: devad14/harness-cd-pipeline:latest
+        ports:
+        - containerPort: 8080
+        resources:
+            limits:
+              cpu: 100m
+              memory: 500Mi
+            requests:
+              cpu: 50m
+              memory: 250Mi
