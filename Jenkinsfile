@@ -9,7 +9,7 @@ pipeline {
     stages {
         stage('Checkout') {
             steps {
-                git 'https://github.com/Aditya-1405/harness-cd-pipeline.git'
+                git branch: 'main', url: 'https://github.com/Aditya-1405/harness-cd-pipeline.git'
             }
         }
 
