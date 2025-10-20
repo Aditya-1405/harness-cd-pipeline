@@ -36,7 +36,7 @@ pipeline {
                 git config user.name "Jenkins"
                 git add deployment/deployment.yaml
                 git commit -m "Update image tag to ${IMAGE_TAG}"
-                git push origin master
+                git push origin main
                 '''
             }
         }
