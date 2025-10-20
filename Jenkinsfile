@@ -39,7 +39,7 @@ pipeline {
                     git config user.name "Jenkins"
                     git add deployment\\deployment.yaml
                     git commit -m "Update image tag to %IMAGE_TAG%"
-                    git push origin main
+                    git push https://%GH_USER%:%GH_PASS%@github.com/Aditya-1405/harness-cd-pipeline.git main
                     '''
                 }
             }
