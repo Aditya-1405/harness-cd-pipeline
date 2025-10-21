@@ -15,7 +15,7 @@ spec:
     spec:
       containers:
       - name: harnesscd-demo
-        image: devad14/harness-cd-pipeline:v15
+        image: devad14/harness-cd-pipeline:v16
         ports:
         - containerPort: 8080
         resources:
